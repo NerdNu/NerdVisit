@@ -46,11 +46,11 @@ track of what areas have been visited with a mini-map mod.
 
 To start visiting locations:
 
-    `/nerdvisit start`
+    /nerdvisit start
     
 To stop or pause the visitation:
     
-    `/nerdvisit stop`
+    /nerdvisit stop
     
 or simply log out. The visitation schedule persists across logins or server
 restarts. To continue where you left off, simply `/nerdvisit start`.
