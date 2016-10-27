@@ -1,0 +1,29 @@
+name: ${project.name}
+version: ${project.version}
+author: totemo
+authors: [totemo]
+description: ${project.description}
+website: ${project.url}
+main: nu.nerd.visit.NerdVisit
+
+permissions:
+  nerdvisit.admin:
+    description: Permission to administer the plugin.
+    default: op
+
+commands:
+  nerdvisit:
+    description: ${project.name} administrative command.
+    permission: nerdvisit.admin
+    usage: |
+    
+      §e/<command> help§f - Show usage help.
+      §e/<command> status§f - Show the current state of the visitation process.
+      §e/<command> start§f - Start visiting chunks.
+      §e/<command> stop§f - Stop or pause visiting chunks.
+      §e/<command> index [<value>]§f - Show or set the index of the next location to visit.
+      §e/<command> period [<value>]§f - Show or set the period in seconds between teleports (minimum 2).
+      §e/<command> step [<value>]§f - Show or set the distance in blocks between visited locations.
+      §e/<command> max [<value>]§f - Show or set the absolute maximum coordinate to visit.
+      §e/<command> command [<command>...]§f - Show or set the command to run at each location.
+      §e/<command> clearcommand§f - Clear the command to nothing.
